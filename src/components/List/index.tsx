@@ -1,26 +1,23 @@
-import { time } from "console";
-import React from "react";
+import { Itask } from "../../types/task.";
+import Item from "./item";
+import style from './list.module.scss';
 
-function List (){
-    const tasks = [
-        {
-            task: "programar",
-            time: "04:00:00"
-        }
-    ]
+interface props {
+    tasks:Itask[],
+    selectedTask: (selectedTask: Itask) => void
+}
+
+function List ({tasks,selectedTask} : props){
+     
     return(
-        <aside>
-            <h2></h2>
+        <aside className={style.taskList}>
+            <h2>Lista de tarefas</h2>
             <ul>
-                {tasks.map((item, index)=> (
-                    <li key={index}>
-                        <h3>
-                            {item.task}
-                        </h3>
-                        <span>
-                            {item.time}
-                        </span>
-                    </li>
+                {tasks.map((item)=> (
+                    <Item 
+                    selectedTask={selectedTask}
+                    {...item} 
+                    key={item.id} />
                 ))}
                 
             </ul>
