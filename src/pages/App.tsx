@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Banner } from '../components/Banner';
 import Form from '../components/Form';
+import { Info } from '../components/Info';
 import List from '../components/List';
-import Timer from '../components/timer';
+import Timer from '../components/Timer';
 import { Itask } from '../types/task.';
 import style from './App.module.scss'
 
@@ -34,6 +36,8 @@ function App() {
   }
   return (
     <div className={style.AppStyle}>
+      <Banner/>
+      <Info/>
       <Form setTasks={setTasks} />
       <List
       selectedTask={selectedTask}

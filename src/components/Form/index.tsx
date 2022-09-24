@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Itask } from "../../types/task.";
-import Button from "../button";
+import Button from "../Button";
 import style  from'./form.module.scss';
 import { v4 as uuidv4 } from 'uuid'; 
 

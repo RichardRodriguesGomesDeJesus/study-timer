@@ -2,6 +2,8 @@
     display: grid;
     grid-template-rows: min-content min-content auto;
     grid-template-areas: 
+    "banner"
+    "info"
     "nova-tarefa"
     "cronometro"
     "tarefas"
@@ -10,21 +12,23 @@
     min-width: 320px;
     min-height: calc(100vh - 32px);
     width: 100%;
-    padding: 32px;
+    padding: 16px 32px 32px 32px;
     box-sizing: border-box;
     border-radius: 10px;
-    background-color: #171717;
+    background-color: var(--color-background-padding);
   
     @media screen and (min-width:1280px)  {
       grid-template-areas: 
+      "banner"
+      "info"
       "nova-tarefa tarefas"
       "cronometro tarefas"
       ;
       column-gap: 64px;
       grid-template-rows: min-content min-content;
-      grid-template-columns: 750px 300px;
+      grid-template-columns: 90%;
       justify-content: center;
       align-content: center;
-      padding: 64px;
+      padding: 32px 64px 64px 64px;
     }
   }

@@ -1,0 +1,19 @@
+.banner{
+    display: flex;
+    background: url(../../assets/img/Banner-Study-Timer.jpg) center / cover no-repeat;
+    grid-area: banner;
+    height: 10rem;
+    width: 100%;
+}
+
+@media screen and (min-width:0){
+    .banner {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .banner {
+        height: 300px;
+    }
+}

@@ -1,3 +1,15 @@
+:root {
+	--color-background: #48A2F9;
+	--color-text: #fff ;
+	--color-placeholder: #fff;
+	--color-background-components: #48F98F;
+	--color-components: #40DBAA;
+	--color-button: #52F2ED;
+	--color-button-active: #40B7DB;
+	--color-iten: #52F2ED;
+	--color-selected: #40B7DB;
+	--color-iten-completed: #40DBAA;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -78,8 +90,8 @@ body {
 	display: flex;
 	justify-content: center;
 	font-family: 'Manjari', sans-serif;
-	color: #F0F0F0;
-	background-color: #4C4C4C;
+	color: var(--color-text);
+	background-color: var(--color-background);
 	height: 100%;
 	width: 100%;
 	padding: 16px;
