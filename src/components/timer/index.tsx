@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { timeToSeconds } from "../../common/utils/time";
 import { Itask } from "../../types/task.";
 import Button from "../Button";
-import Clock from "./Clock";
+import Clock from "../../Clock";
 import style from "./timer.module.scss";
 
 interface Props{
@@ -28,7 +28,7 @@ export default function Timer({selected, finishTask}: Props) {
     }
     return(
         <div className={style.timer}>
-            <p className={style.title} >Escolhe um card e inicie o cronômetro</p>
+            <p className={style.title} >Escolha um card e inicie o timer</p>
             <div className={style.timerWrapper}>
                 <Clock time={time} />
             </div>

@@ -1,12 +1,12 @@
 .AppStyle {
     display: grid;
     grid-template-rows: min-content min-content auto;
-    grid-template-areas: 
-    "banner"
-    "info"
-    "nova-tarefa"
-    "cronometro"
-    "tarefas"
+    grid-template-areas:
+    "night-mode"
+    "new-task"
+    "timer"
+    "tasks"
+    "StopWatch"
     ;
     row-gap: 24px;
     min-width: 320px;
@@ -17,12 +17,11 @@
     border-radius: 10px;
     background-color: var(--color-background-padding);
   
-    @media screen and (min-width:1280px)  {
+    @media screen and (min-width:1440px)  {
       grid-template-areas: 
-      "banner"
-      "info"
-      "nova-tarefa tarefas"
-      "cronometro tarefas"
+      "new-task "
+      "timer tasks"
+      "StopWatch"
       ;
       column-gap: 64px;
       grid-template-rows: min-content min-content;
@@ -31,4 +30,6 @@
       align-content: center;
       padding: 32px 64px 64px 64px;
     }
+    
+    
   }
