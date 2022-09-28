@@ -1,8 +1,8 @@
 import React from "react";
 import Style from './StopWatch.module.scss'
 import { useEffect, useState } from "react"
-import Clock from "../../Clock"
 import Button from "../Button"
+import Clock from "../Clock";
 
 
 export function StopWatch() {
@@ -17,7 +17,7 @@ export function StopWatch() {
         if (isActive && isPaused === false) {
           intervalId = setInterval(() => {
             setTime((time) => time + 1);
-          }, 1000);
+          }, 100);
         } else {
           clearInterval(intervalId);
         }

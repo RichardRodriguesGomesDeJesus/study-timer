@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { timeToSeconds } from "../../common/utils/time";
 import { Itask } from "../../types/task.";
 import Button from "../Button";
-import Clock from "../../Clock";
+import Clock from "../Clock";
 import style from "./timer.module.scss";
 
 interface Props{

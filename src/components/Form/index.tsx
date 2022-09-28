@@ -52,7 +52,7 @@ function Form({setTasks}: Props) {
             onChange={ event => setTime(event.target.value)}
             id="time" 
             min={"00:00:00"} 
-            max={"01:30:00"}
+            max={"10:00:00"}
             required />
         </div>
         <Button type="submit" >Adicionar</Button>
