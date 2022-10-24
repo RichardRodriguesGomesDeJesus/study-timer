@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Form from '../components/Form';
-import List from '../components/List';
-import { NightMode } from '../components/NightMode';
-import { StopWatch } from '../components/StopWatch';
-import Timer from '../components/Timer';
+import Form from '../Components/Form';
+import List from '../Components/List';
+import { NightMode } from '../Components/NightMode';
+import { StopWatch } from '../Components/StopWatch';
+import Timer from '../Components/Timer';
 import { Itask } from '../types/task.';
 import style from './App.module.scss'
 
