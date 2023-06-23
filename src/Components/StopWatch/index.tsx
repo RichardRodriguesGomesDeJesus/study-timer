@@ -17,7 +17,7 @@ export function StopWatch() {
         if (isActive && isPaused === false) {
           intervalId = setInterval(() => {
             setTime((time) => time + 1);
-          }, 100);
+          }, 1000);
         } else {
           clearInterval(intervalId);
         }
